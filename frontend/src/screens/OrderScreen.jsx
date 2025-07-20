@@ -166,7 +166,7 @@ const OrderScreen = () => {
                       </Col>
                       <Col className="flex items-center">
                         <Link
-                          to={`/products/${item.product}`}
+                          to={`/product/${item.id}`}
                           className=" md:text-[1.5rem]  text-[1.2rem] no-underline text-[#502314] font-bold "
                         >
                           {item.name}

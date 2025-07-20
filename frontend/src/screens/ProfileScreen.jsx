@@ -35,7 +35,6 @@ const ProfileScreen = () => {
     } else {
       try {
         const res = await updateProfile({
-          _id: userInfo._id,
           name,
           email,
           password,
@@ -43,7 +42,7 @@ const ProfileScreen = () => {
         dispatch(setCredentials(res));
         toast.success("Profile updated successfully");
       } catch (err) {
-        toast.error(err?.data.message || err.error);
+        toast.error(err?.data?.message || err.error);
       }
     }
   };
@@ -57,7 +56,7 @@ const ProfileScreen = () => {
               <Form.Label className="text-[1.2rem]">Name</Form.Label>
               <FormControl
                 value={name}
-                type="name"
+                type="text"
                 placeholder="Enter name"
                 onChange={(e) => setName(e.target.value)}
               ></FormControl>

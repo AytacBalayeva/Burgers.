@@ -123,10 +123,14 @@ export const ProductScreen = () => {
                 </div>
               </div>
             </div>
-            <div className="review mb-[2rem] ">
+            <div className="review mb-[2rem] max-w-[60rem] !pr-0 ">
               <div md={6}>
                 <h2 className="mb-4">Reviews</h2>
-                {product.reviews.length === 0 && <Message>No Reviews</Message>}
+                {product.reviews.length === 0 && (
+                  <p className="!bg-red-100 border-1 rounded-lg !border-red-200 text-2xl px-4 py-2 mr-4">
+                    No Reviews
+                  </p>
+                )}
                 <ListGroup variant="flush">
                   {product.reviews.map((review) => (
                     <ListGroup.Item
@@ -139,7 +143,7 @@ export const ProductScreen = () => {
                       <p>{review.comment}</p>
                     </ListGroup.Item>
                   ))}
-                  <ListGroup.Item className="!bg-transparent  mb-[4rem] p-[1rem] !rounded-lg !text-[#502314]">
+                  <ListGroup.Item className="!bg-transparent  mb-[4rem] !pl-0 !rounded-lg !text-[#502314]">
                     <h2 className="mb-4">Write a Customer Review </h2>
                     {loadingProductReview && <Loader />}
                     {userInfo ? (
@@ -174,6 +178,7 @@ export const ProductScreen = () => {
                             row="3"
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
+                            className="!text-[1.2rem]"
                           ></Form.Control>
                         </Form.Group>
                         <Button
@@ -185,10 +190,13 @@ export const ProductScreen = () => {
                         </Button>
                       </Form>
                     ) : (
-                      <Message>
-                        Please <Link to="/login">sign in</Link> to write a
-                        review
-                      </Message>
+                      <p className="!bg-red-100 border-1 rounded-lg !border-red-200 text-2xl px-4 py-2 ">
+                        Please{" "}
+                        <Link to="/login" className=" !underline">
+                          sign in
+                        </Link>{" "}
+                        to write a review
+                      </p>
                     )}
                   </ListGroup.Item>
                 </ListGroup>

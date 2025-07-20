@@ -1,7 +1,9 @@
-import asyncHandler from "../middleware/asyncHandler.js";
 import Product from "../models/productModel.js";
-import Order from "../models/orderModel.js";
 import { calcPrices } from "../utils/calcPrices.js";
+import { verifyPayPalPayment, checkIfNewTransaction } from "../utils/paypal.js";
+import Order from "../models/orderModel.js";
+import asyncHandler from "../middleware/asyncHandler.js";
+
 // @desc    Create new order
 // @route   POST /api/orders
 // @access  Private

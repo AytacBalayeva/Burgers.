@@ -1,58 +1,88 @@
-# 🍔 My First MERN Stack Project – Full-Featured Food Ordering Website
+<h1 align="center">🍔 BurgerShop — Full-Stack Food Ordering Platform</h1>
 
-Welcome to my first full-stack application built using the **MERN stack** (MongoDB, Express.js, React, Node.js)!  
-This project is a complete online **food ordering system**, designed with both regular users and administrators in mind. Users can browse the menu, place orders, and track them — while admins can manage meals, users, and delivery statuses.
----
-###🔗 Live Demo: [https://lnkd.in/e-fQqTED](https://burgers-zo9w.onrender.com)
----
+<p align="center">
+  A complete MERN stack food ordering system for customers and administrators.
+</p>
 
-## 🚀 Features
+<p align="center">
+  <a href="https://burgers-zo9w.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live Demo-Click Here-orange?style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
 
-### 👨‍🍳 User Side
-- 🛒 **Add to Cart** – add, remove, and update meals
-- ⭐ **Product Reviews & Ratings**
-- 📄 **Menu Pagination** – easily browse through meals
-- 🔍 **Search Functionality**
-- 👤 **User Profile** – view and manage order history
-- 🚚 **Checkout Flow**:
-  - Enter **shipping/delivery address**
-  - Select **payment method** (PayPal or Credit Card)
+![Screenshot](https://github.com/user-attachments/assets/12e3e03f-0ef9-41b1-8be7-ea0710877763)
 
 ---
+
+## 📖 About
+
+BurgerShop is my first full-stack application built with the MERN stack. It's a complete food ordering system where customers can browse the menu, place orders, and track deliveries — while admins have full control over meals, users, and order management. Built to practice real-world full-stack development from authentication to payment integration.
+
+---
+
+## ✨ Features
+
+### 👨‍🍳 Customer Side
+- 🛒 **Cart Management** — add, remove, and update meals
+- ⭐ **Reviews & Ratings** on menu items
+- 📄 **Pagination & Search** to browse the menu easily
+- 👤 **User Profile** with full order history
+- 🚚 **Checkout Flow** — shipping address and payment method selection
+- 💳 **Payments** via PayPal and Credit Card
 
 ### 🔐 Admin Side
-- 🍕 **Manage Meals** – create, edit, delete products
-- 👥 **User Management** – view and manage users
-- 📦 **Order Details Page** – view individual order info
-- ✅ **Mark Orders as Delivered**
+- 🍕 **Meal Management** — create, edit, and delete products
+- 👥 **User Management** — view and manage all users
+- 📦 **Order Management** — view order details and mark as delivered
 
 ---
 
-## 🛠️ Developer Tools
+## 🛠️ Tech Stack
 
-- 🌱 **Database Seeder** – preloads meals and users into the database for testing/demo
+| Frontend | Backend | Database | Other |
+|----------|---------|----------|-------|
+| React | Node.js & Express | MongoDB | JWT |
+| Redux Toolkit | REST API | Mongoose | PayPal API |
+| React Router | | | Bootstrap |
 
 ---
 
-## 🧑‍💻 Tech Stack
+## 🌱 Developer Tools
 
-- **Frontend:** React, React Router, Redux Toolkit
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB (via Mongoose)
-- **Authentication:** JSON Web Tokens (JWT)
-- **Payments:** PayPal and Credit Card Integration
-- **Styling:** Bootstrap with custom enhancements 
+A **Database Seeder** is included to preload meals and users for testing and demo purposes.
+
+---
+
+## 🚀 Getting Started
+```bash
+# Clone the repository
+git clone https://github.com/Aytac20/Burgers.git
+
+# Install dependencies
+npm install
+cd frontend && npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Seed the database
+npm run seed
+
+# Run the app
+npm run dev
+```
+
+---
 
 ## 🖼️ Screenshots
-<img width="1577" height="759" alt="image" src="https://github.com/user-attachments/assets/12e3e03f-0ef9-41b1-8be7-ea0710877763" />
-<img width="1549" height="738" alt="image" src="https://github.com/user-attachments/assets/568bcc08-e389-4711-83e5-b2530df52d6d" />
-<img width="1564" height="574" alt="image" src="https://github.com/user-attachments/assets/4c7763af-608a-41cc-988e-d724d503cd06" />
-<img width="1563" height="726" alt="image" src="https://github.com/user-attachments/assets/68cdba89-32a2-45f5-985a-7f6f50c510db" />
 
-
-## 🙏 Feedback
-This is my first complete MERN project — I’d love to hear your thoughts!
-Feel free to open an issue or connect with me on LinkedIn.
-
+![Screenshot 2](https://github.com/user-attachments/assets/568bcc08-e389-4711-83e5-b2530df52d6d)
+![Screenshot 3](https://github.com/user-attachments/assets/4c7763af-608a-41cc-988e-d724d503cd06)
+![Screenshot 4](https://github.com/user-attachments/assets/68cdba89-32a2-45f5-985a-7f6f50c510db)
 
 ---
+
+## 🙏 Feedback
+
+This is my first complete MERN project and I'd love to hear your thoughts! Feel free to open an issue or connect with me on [LinkedIn](https://linkedin.com).
+

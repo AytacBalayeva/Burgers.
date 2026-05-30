@@ -16,7 +16,7 @@ export const ProductScreen = () => {
   const { id: productId } = useParams();
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
-  const [comment, setComment] = useState(0);
+  const [comment, setComment] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { userInfo } = useSelector((state) => state.auth);

@@ -1,47 +1,88 @@
+<h1 align="center">🍔 BurgerShop — Full-Stack Food Ordering Platform</h1>
 
-# Food Ordering Website
+<p align="center">
+  A complete MERN stack food ordering system for customers and administrators.
+</p>
 
-A full-stack food ordering website featuring user authentication, PayPal payment integration, admin management, and a complete shopping experience.
+<p align="center">
+  <a href="https://burgers-zo9w.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live Demo-Click Here-orange?style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
 
-## Check out the live version : https://leckerbiss-3.onrender.com 
+![Screenshot](https://github.com/user-attachments/assets/12e3e03f-0ef9-41b1-8be7-ea0710877763)
 
-## Features
+---
 
-- 🛒 Full featured shopping cart
-- ⭐ Product reviews and ratings
-- 👤 User profile with order history
-- 🧾 Admin product management
-- 🧾 Admin user management
-- 🧾 Admin order details page
-- ✅ Mark orders as delivered option
-- 🚚 Checkout process including shipping and payment method
-- 💳 PayPal and credit card integration
-- 💿 Database seeder for initial products & users
+## 📖 About
 
+BurgerShop is my first full-stack application built with the MERN stack. It's a complete food ordering system where customers can browse the menu, place orders, and track deliveries — while admins have full control over meals, users, and order management. Built to practice real-world full-stack development from authentication to payment integration.
 
+---
 
-## Tech Stack
+## ✨ Features
 
-- Frontend: React 
+### 👨‍🍳 Customer Side
+- 🛒 **Cart Management** — add, remove, and update meals
+- ⭐ **Reviews & Ratings** on menu items
+- 📄 **Pagination & Search** to browse the menu easily
+- 👤 **User Profile** with full order history
+- 🚚 **Checkout Flow** — shipping address and payment method selection
+- 💳 **Payments** via PayPal and Credit Card
 
-- Backend: Node.js with Express 
+### 🔐 Admin Side
+- 🍕 **Meal Management** — create, edit, and delete products
+- 👥 **User Management** — view and manage all users
+- 📦 **Order Management** — view order details and mark as delivered
 
-- Database:MongoDB 
+---
 
-- Payment: PayPal API and credit card processing
+## 🛠️ Tech Stack
 
+| Frontend | Backend | Database | Other |
+|----------|---------|----------|-------|
+| React | Node.js & Express | MongoDB | JWT |
+| Redux Toolkit | REST API | Mongoose | PayPal API |
+| React Router | | | Bootstrap |
 
-## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/2d5e0bda-0d31-4682-8614-27c9d41813b3)
+---
 
+## 🌱 Developer Tools
 
+A **Database Seeder** is included to preload meals and users for testing and demo purposes.
 
-##  Sample User Logins
--  📩:admin@email.com (Admin)
-🔑:123456
+---
 
-- 📩:john@email.com (Customer)
-🔑:123456
+## 🚀 Getting Started
+```bash
+# Clone the repository
+git clone https://github.com/Aytac20/Burgers.git
 
-- 📩:jane@email.com (Customer)
-🔑:123456
+# Install dependencies
+npm install
+cd frontend && npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Seed the database
+npm run seed
+
+# Run the app
+npm run dev
+```
+
+---
+
+## 🖼️ Screenshots
+
+![Screenshot 2](https://github.com/user-attachments/assets/568bcc08-e389-4711-83e5-b2530df52d6d)
+![Screenshot 3](https://github.com/user-attachments/assets/4c7763af-608a-41cc-988e-d724d503cd06)
+![Screenshot 4](https://github.com/user-attachments/assets/68cdba89-32a2-45f5-985a-7f6f50c510db)
+
+---
+
+## 🙏 Feedback
+
+This is my first complete MERN project and I'd love to hear your thoughts! Feel free to open an issue or connect with me on [LinkedIn](https://linkedin.com).
+
